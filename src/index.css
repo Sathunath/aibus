@@ -1,0 +1,150 @@
+@import "tailwindcss";
+
+:root {
+  --sidebar-width-desktop: 240px;
+  --sidebar-width-mobile: 0px;
+  --hamburger-icon-size: 24px;
+  --slide-panel-width: clamp(260px, 80vw, 320px);
+  --slide-panel-transition: 250ms ease-out;
+
+  --stat-chip-height: 28px;
+  --header-bar-height: 30px;
+  --filter-bar-height: 28px;
+  --micro-input-height: 24px;
+  --micro-pill-height: 24px;
+  --table-row-height: 28px;
+  --primary-cta-height: 28px;
+
+  /* Fluid Technology Tokens (v1.4) */
+  --fluid-text-body: clamp(11px, 1.2vw, 13px);
+  --fluid-text-meta: clamp(8px, 0.9vw, 10px);
+  --fluid-el-height: clamp(28px, 1.5vw, 30px);
+  --fluid-gap: clamp(4px, 1vw, 8px);
+  --fluid-padding: clamp(8px, 2vw, 16px);
+  --fluid-header-height: clamp(28px, 2vw, 30px);
+}
+
+/* Custom utility helpers for ultra-compact 30px standard & v1.4 Fluid scaling */
+.fluid-text-body {
+  font-size: var(--fluid-text-body);
+}
+
+.fluid-text-meta {
+  font-size: var(--fluid-text-meta);
+}
+
+.fluid-el-height {
+  height: var(--fluid-el-height);
+  min-height: 28px;
+}
+
+.fluid-gap {
+  gap: var(--fluid-gap);
+}
+
+.fluid-padding {
+  padding: var(--fluid-padding);
+}
+
+.fluid-header {
+  min-height: var(--fluid-header-height);
+  padding-left: clamp(0.5rem, 1.5vw, 1rem);
+  padding-right: clamp(0.5rem, 1.5vw, 1rem);
+  padding-top: clamp(0.25rem, 0.8vw, 0.5rem);
+  padding-bottom: clamp(0.25rem, 0.8vw, 0.5rem);
+}
+
+.stat-chips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: var(--fluid-gap);
+}
+
+.stat-chip {
+  height: clamp(28px, 1.5vw, 30px);
+  min-height: 28px;
+  max-height: 30px;
+  display: inline-flex;
+  align-items: center;
+  padding-left: clamp(0.375rem, 1vw, 0.625rem);
+  padding-right: clamp(0.375rem, 1vw, 0.625rem);
+  font-size: var(--fluid-text-body);
+  font-weight: 700;
+  border-radius: 0.375rem;
+  white-space: nowrap;
+}
+
+.header-bar-30 {
+  min-height: 28px;
+  height: 30px;
+  max-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.filter-bar-28 {
+  height: clamp(28px, 1.5vw, 30px);
+  min-height: 28px;
+  max-height: 30px;
+  display: flex;
+  align-items: center;
+  gap: var(--fluid-gap);
+}
+
+.micro-input-22 {
+  height: var(--fluid-el-height);
+  font-size: var(--fluid-text-body);
+  padding-left: clamp(0.375rem, 1vw, 0.5rem);
+  padding-right: clamp(0.375rem, 1vw, 0.5rem);
+  border-radius: 0.25rem;
+}
+
+.micro-pill-22 {
+  height: var(--fluid-el-height);
+  font-size: var(--fluid-text-body);
+  font-weight: 700;
+  padding-left: clamp(0.375rem, 1vw, 0.5rem);
+  padding-right: clamp(0.375rem, 1vw, 0.5rem);
+  border-radius: 9999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Ultra-Compact High-Density Data Row Helpers */
+.compact-table-row {
+  height: 28px;
+}
+
+.compact-table-cell {
+  padding-top: 0.125rem; /* 2px */
+  padding-bottom: 0.125rem; /* 2px */
+  padding-left: 0.625rem; /* 10px */
+  padding-right: 0.625rem; /* 10px */
+  font-size: 11px;
+}
+
+.micro-chip-20 {
+  height: 20px;
+  font-size: 9px;
+  font-weight: 800;
+  padding-left: 0.375rem;
+  padding-right: 0.375rem;
+  border-radius: 9999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+

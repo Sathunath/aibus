@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Remix: AutoShip AI Operations Command Center",
+  "description": "Comprehensive AI-Powered USA Dropshipping \u0026 eCommerce Business OS with multi-agent orchestration, 12-account social media hub, supplier management, and n8n workflow automation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
